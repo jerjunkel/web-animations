@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 5rem auto;
+  padding: 0 5rem;
+}
+
+.loaders {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.bouncer .ball {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #880000;
+  border-radius: 100vh;
+  margin: 0 0.1rem;
+  animation: bounce 1s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+}
+
+.bouncer .ball:nth-of-type(2) {
+  background-color: #bb0000;
+  animation-delay: 100ms;
+}
+
+.bouncer .ball:nth-of-type(3) {
+  background-color: #ee0000;
+  animation-delay: 200ms;
+}
+
+.bouncer .ball:nth-of-type(4) {
+  background-color: #ff2222;
+  animation-delay: 300ms;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
